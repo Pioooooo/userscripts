@@ -21,26 +21,29 @@
     - 't': Enter trial mode
     - 'c': Reject the current trial
     - 'a': Accept the current trial
+    - Spacebar: Check the answer
 */
 
-(function() {
+(function () {
     /* globals ui */
 
     'use strict';
 
-    ui.puzzle.on('ready', ()=>{
+    ui.puzzle.on('ready', () => {
         window.addEventListener('keydown', (e) => {
             if (e.repeat) {
                 return;
             }
-            if(e.key === 't'){
-                if(!ui.puzzle.opemgr.atStartOfTrial()) {
+            if (e.key === 't') {
+                if (!ui.puzzle.opemgr.atStartOfTrial()) {
                     ui.puzzle.enterTrial();
                 }
-            } else if(e.key === 'c'){
+            } else if (e.key === 'c') {
                 ui.puzzle.rejectCurrentTrial();
-            } else if(e.key === 'a'){
+            } else if (e.key === 'a') {
                 ui.puzzle.acceptTrial();
+            } else if (e.key === ' ') {
+                ui.menuarea.answercheck();
             }
         });
     }, false);
