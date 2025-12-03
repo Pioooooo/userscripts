@@ -1,14 +1,16 @@
 // ==UserScript==
 // @name         Pzprjs Keyboard Shortcut
-// @namespace    https://github.com/Pioooooo
-// @version      2025-12-03
 // @description  Add some keyboard shortcuts for pzprjs
+// @version      0.0.1
 // @author       Pioooooo
-// @source	     https://github.com/Pioooooo/userscripts
+// @homepageURL  https://github.com/Pioooooo/userscripts
+// @supportURL   https://github.com/Pioooooo/userscripts/issues
 // @match        *://puzz.link/p*
 // @match        *://pzplus.tck.mn/p*
 // @match        *://pzprxs.vercel.app/p*/*
 // @match        *://pzv.jp/p*/*
+// @license      MIT
+// @namespace    https://github.com/Pioooooo/userscripts
 // @icon         https://www.google.com/s2/favicons?domain=puzz.link
 // @tag          pzprjs
 // @grant        none
