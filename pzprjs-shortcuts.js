@@ -14,6 +14,13 @@
 // @grant        none
 // ==/UserScript==
 
+/*
+    This script adds keyboard shortcuts to the pzprjs puzzle platform:
+    - 't': Enter trial mode
+    - 'c': Reject the current trial
+    - 'a': Accept the current trial
+*/
+
 (function() {
     /* globals ui */
 
